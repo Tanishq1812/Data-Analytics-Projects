@@ -12,8 +12,8 @@ Welcome to my Data Analytics Portfolio on GitHub! This repository contains a var
   
 Feel free to explore the projects and reach out if you have questions or would like to collaborate!
 ## Contact
-* Click [here](www.linkedin.com/in/tanishq-rastogi-0907a2187) to visit my LinkedIn
-* Click [here](tanishqrastogi999@gmail.com) to mail me
+* Click [here](http.//www.linkedin.com/in/tanishq-rastogi-0907a2187) to visit my LinkedIn
+* Click [here](http.//tanishqrastogi999@gmail.com) to mail me
 
 Enjoy exploring my projects, and I appreciate any feedback or contributions to improve my work!
 
