@@ -39,7 +39,9 @@ where marital_status='Y' and rent>9000;
 -- Question 3:
 --Write a query to display profile id, full name, phone, email id, city, house id, move_in_date ,
 --move_out date, rent, total number of referrals made, latest employer and the occupational category 
---of all the tenants living in Bangalore or Pune in the time period of jan 2015 to jan 2016 sorted by--their rent in descending order
+--of all the tenants living in Bangalore or Pune in the time period of jan 2015 to jan 2016 sorted by
+--their rent in descending order
+
 select distinct a.profile_id,concat(first_name,' ',last_name)as FullName,a.phone,a.email_id,a.city,b.house_id,
 b.move_in_date,b.move_out_date,b.rent,count(c.referral_valid)over (Partition by c.profile_id) as total_no_of_referrals,
 d.latest_employer,d.occupational_category
@@ -60,7 +62,8 @@ order by rent desc
 --Write a sql snippet to find the full_name, email_id, phone number and referral code of all
 --the tenants who have referred more than once.
 --Also find the total bonus amount they should receive given that the bonus gets calculated
---only for valid referrals.
+--only for valid referrals.
+
 select concat(a.first_name,' ',a.last_name) as Full_Name,a.email_id ,a.phone as phone_number,a.referral_code,
 b.referral_valid,sum(b.referrer_bonus_amount) as total_bonus
 from Profiles as a
@@ -124,7 +127,8 @@ WHERE profile_id IN (
 -- Question 8:
 --Write a query to get Profile ID, Full Name, Contact Number of the tenants along with a new
 --column 'Customer Segment' wherein if the tenant pays rent greater than 10000, tenant falls
---in Grade A segment, if rent is between 7500 to 10000, tenant falls in Grade B else in Grade C
+--in Grade A segment, if rent is between 7500 to 10000, tenant falls in Grade B else in Grade C
+
 select * from Profiles;
 
 select a.profile_id,concat(a.first_name,' ',a.last_name) as FullName,a.phone,b.rent,
